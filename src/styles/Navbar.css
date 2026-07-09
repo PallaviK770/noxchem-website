@@ -1,0 +1,17 @@
+nav a.active{
+
+    color:#1558b0;
+
+    font-weight:600;
+
+}
+
+nav a{
+
+    text-decoration:none;
+
+    color:#333;
+
+    transition:.3s;
+
+}

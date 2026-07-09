@@ -1,0 +1,492 @@
+
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+font-family:Arial,sans-serif;
+background:#f5f8fd;
+color:#222;
+line-height:1.6
+}
+a{text-decoration:none}
+
+.hero-content h4{
+letter-spacing:3px;
+font-size:18px;
+margin-bottom:15px;
+color:#b9d3ff
+}
+.hero-content h1{
+font-size:52px;
+line-height:1.2;
+margin-bottom:20px;
+}
+.hero-content p{
+font-size:18px;
+max-width:600px;
+margin-bottom:30px;
+}
+
+.hero-image img{
+max-width:100%;
+border-radius:20px;
+box-shadow:0 15px 35px rgba(0,0,0,.25)
+}
+
+
+/* ==========================================
+   NOxchem Gradient Button
+========================================== */
+
+.btn-primary,
+.btn-secondary,
+.job-card button,
+.submit-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    padding:13px 32px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:linear-gradient(
+        90deg,
+        #00B7D9 0%,
+        #66D84E 100%
+    );
+
+    color:#ffffff;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    text-decoration:none;
+
+    transition:all .35s ease;
+
+    box-shadow:
+    0 5px 15px rgba(0,183,217,.25);
+
+}
+
+/* Hover */
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.job-card button:hover,
+.submit-btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+    0 10px 22px rgba(0,183,217,.35);
+
+    background:linear-gradient(
+        90deg,
+        #00A9CC 0%,
+        #59CF43 100%
+    );
+
+}
+
+.why-card:hover,.job-card:hover{
+transform:translateY(-8px);
+box-shadow:0 18px 35px rgba(0,0,0,.15);
+}
+.why-card i{
+font-size:48px;
+color:#5D86F5;
+margin-bottom:20px;
+}
+.why-card h3,.job-card h3{
+color:#0A2B74;
+margin-bottom:15px;
+}
+.job-card p{
+margin-bottom:10px;
+color:#555;
+}
+.jobs-section{
+background:#f7f9ff;
+}
+@media(max-width:992px){
+.career-hero{
+text-align:center;
+flex-direction:column;
+}
+.hero-content h1{font-size:42px}
+.hero-buttons{justify-content:center}
+}
+@media(max-width:768px){
+section{padding:60px 5%}
+.hero-content h1{font-size:34px}
+.hero-content p{font-size:16px}
+section h2{font-size:30px}
+}
+.banner-btn{
+
+    display:inline-block;
+
+    margin-left:25px;
+
+    padding:10px 24px;
+
+    background:linear-gradient(
+        90deg,
+        #00C6A7,
+        #00AEEF
+    );
+
+    color:#fff;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    box-shadow:
+        0 6px 18px rgba(0,174,239,.35);
+
+    transition:all .3s ease;
+
+}
+
+.banner-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 10px 25px rgba(0,174,239,.45);
+
+}
+/* ============================
+   APPLICATION POPUP
+============================ */
+
+.modal{
+    display:none;
+    position:fixed;
+    z-index:9999;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+    backdrop-filter:blur(6px);
+    overflow:auto;
+    animation:fadeIn .3s ease;
+}
+
+.modal-content{
+
+    background:#ffffff;
+
+    width:90%;
+    max-width:700px;
+
+    margin:50px auto;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    position:relative;
+
+    animation:popup .35s ease;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.25);
+
+}
+
+.modal-content h2{
+
+    text-align:center;
+
+    color:#0A2B74;
+
+    margin-bottom:30px;
+
+}
+
+.close-btn{
+
+    position:absolute;
+
+    right:20px;
+
+    top:15px;
+
+    font-size:32px;
+
+    color:#0A2B74;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.close-btn:hover{
+
+    color:#ff3b3b;
+
+    transform:rotate(90deg);
+
+}
+
+/* Form */
+
+.form-group{
+
+    margin-bottom:18px;
+
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+    color:#0A2B74;
+
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+
+    width:100%;
+
+    padding:13px 15px;
+
+    border:1px solid #d9d9d9;
+
+    border-radius:10px;
+
+    outline:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+    font-family:inherit;
+
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+
+    border-color:#5D86F5;
+
+    box-shadow:0 0 10px rgba(93,134,245,.25);
+
+}
+
+.form-group textarea{
+
+    resize:vertical;
+
+}
+
+.checkbox{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:10px;
+
+    margin:20px 0;
+
+    font-size:15px;
+
+}
+
+.checkbox input{
+
+    margin-top:5px;
+
+}
+
+.submit-btn{
+
+    width:100%;
+
+    background:#41C768;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:30px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.submit-btn:hover{
+
+    background:#34B65B;
+
+    transform:translateY(-2px);
+
+}
+
+/* Animations */
+
+@keyframes popup{
+
+    from{
+
+        transform:translateY(-40px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.modal-content{
+
+    width:95%;
+
+    padding:25px;
+
+}
+
+.modal-content h2{
+
+    font-size:24px;
+
+}
+
+.close-btn{
+
+    font-size:28px;
+
+}
+
+}
+/* ===========================
+   HIRING BANNER (IMPROVED BLUE)
+=========================== */
+
+.hiring-banner {
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+
+    width: 100%;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    /* stronger, deeper blue (same theme, just richer) */
+    background: linear-gradient(135deg, #081f5c, #1f4fbf);
+
+    /* subtle separation shadow */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Marquee text */
+.marquee {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+
+    padding-left: 100%;
+
+    animation: scrollBanner 22s linear infinite;
+}
+
+/* Button inside banner */
+.marquee a {
+    color: #081f5c;
+
+    background: #ffffff;
+
+    padding: 6px 15px;
+    border-radius: 20px;
+
+    margin-left: 20px;
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+/* Hover */
+.marquee a:hover {
+    background: #e8efff;
+}
+
+/* Animation */
+@keyframes scrollBanner {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 22s linear infinite;
+}
