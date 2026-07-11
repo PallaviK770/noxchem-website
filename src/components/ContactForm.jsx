@@ -13,6 +13,7 @@ export default function ContactForm() {
 });
 
 const [loading, setLoading] = useState(false);
+const [submitted, setSubmitted] = useState(false);
 const handleChange = (e) => {
   setFormData({
     ...formData,
@@ -39,8 +40,8 @@ const handleSubmit = async (e) => {
   setLoading(false);
 
   if (error) {
-    alert("Something went wrong.");
     console.error(error);
+    alert("Unable to send your message. Please try again.");
   } else {
 
   await emailjs.send(
@@ -57,7 +58,7 @@ const handleSubmit = async (e) => {
     "r-WMPwGDXU-mSd9XG"
   );
 
-  alert("Message sent successfully!");
+  setSubmitted(true);
 
   setFormData({
     name: "",
@@ -70,6 +71,48 @@ const handleSubmit = async (e) => {
 
 }
 };
+
+if (submitted) {
+  return (
+    <div className="rounded-3xl bg-white p-10 shadow-xl text-center">
+
+      <div className="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-green-100">
+        <svg
+          className="h-10 w-10 text-green-600"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="3"
+          viewBox="0 0 24 24"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M5 13l4 4L19 7"
+          />
+        </svg>
+      </div>
+
+      <h2 className="mt-6 text-3xl font-bold text-[#0A4DA3]">
+        Message Sent Successfully!
+      </h2>
+
+      <p className="mt-4 text-gray-600 leading-7">
+        Thank you for contacting <strong>NOx Chem Industries</strong>.
+        <br />
+        We have received your enquiry and our team will get back to you shortly.
+      </p>
+
+      <button
+        onClick={() => setSubmitted(false)}
+        className="mt-8 rounded-xl bg-[#0A4DA3] px-8 py-3 font-semibold text-white transition hover:bg-blue-700"
+      >
+        Send Another Message
+      </button>
+
+    </div>
+  );
+}
+
   return (
     <div id="contact-form" className="rounded-3xl bg-white p-8 shadow-xl">
 
