@@ -97,7 +97,7 @@ if (submitted) {
       </h2>
 
       <p className="mt-4 text-gray-600 leading-7">
-        Thank you for contacting <strong>NOx Chem Industries</strong>.
+        Thank you for contacting <strong>NOxChem Industries</strong>.
         <br />
         We have received your enquiry and our team will get back to you shortly.
       </p>
