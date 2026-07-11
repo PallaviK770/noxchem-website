@@ -5,8 +5,8 @@ const jobs = [
         title:"Production Manager",
         department:"Production",
         location:"Indore",
-        experience:"2-5 Years",
-        qualification:"B.Tech Mechanical / Chemical"
+        experience:"3+ Years",
+        qualification:"B.sc Chemical"
     },
 
     {
@@ -14,8 +14,8 @@ const jobs = [
         title:"Sales Manager",
         department:"Quality",
         location:"Indore",
-        experience:"1-3 Years",
-        qualification:"B.Sc / M.Sc Chemistry"
+        experience:"3+ Years",
+        qualification:"Graduate"
     },
 
     {
@@ -23,8 +23,8 @@ const jobs = [
         title:"Sales Executive",
         department:"Manufacturing",
         location:"Indore",
-        experience:"3+ Years",
-        qualification:"Diploma / B.Tech"
+        experience:"1-3 Years",
+        qualification:"Graduate/12th pass"
     },
 
     {
@@ -32,8 +32,8 @@ const jobs = [
         title:"Plant Supervisor",
         department:"Sales",
         location:"Indore",
-        experience:"2 Years",
-        qualification:"Graduate"
+        experience:"1-3 Years",
+        qualification:"12th pass"
     },
 
     {
@@ -42,7 +42,7 @@ const jobs = [
         department:"Logistics",
         location:"Indore",
         experience:"1-3 Years",
-        qualification:"Graduate"
+        qualification:"B.com"
     },
 
 ];

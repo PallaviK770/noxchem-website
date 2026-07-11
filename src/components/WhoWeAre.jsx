@@ -27,12 +27,12 @@ export default function WhoWeAre() {
           </p>
 
           <h2 className="mt-4 text-4xl font-bold text-[#0A4DA3]">
-            Your Trusted Partner in Chemical Innovation
+            Your Trusted Partner in DEF Chemical Innovation
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-gray-600">
             NOxchem Industries is committed to delivering high-quality
-            chemical solutions that meet the evolving needs of industries.
+             DEF (Diesel Exhaust Fluid) solutions that meet the evolving needs of industries.
             Through continuous innovation, advanced manufacturing, and strict
             quality standards, we strive to provide products that create
             long-term value for our customers.

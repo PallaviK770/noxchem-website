@@ -56,8 +56,8 @@ export default function WhyNoxChem() {
           </h2>
 
           <p className="mt-6 text-lg leading-8 text-gray-600">
-            At NOx Chem Industries, we are committed to delivering dependable
-            chemical solutions while focusing on quality, innovation, and
+            At NOxchem Industries, we are committed to delivering dependable
+             DEF (Diesel Exhaust Fluid) while focusing on quality, innovation, and
             long-term customer relationships.
           </p>
 

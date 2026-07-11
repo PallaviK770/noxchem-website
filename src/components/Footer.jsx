@@ -15,7 +15,7 @@ function Footer() {
           {/* Company */}
           <div>
             <h3 className="text-2xl font-bold">
-              NOx Chem Industries
+              NOxchem Industries
             </h3>
 
             <p className="mt-5 text-blue-100 leading-7">
@@ -60,12 +60,12 @@ function Footer() {
 
               <div className="flex items-start gap-3">
                 <FaPhoneAlt className="mt-1" />
-                <span>+91 9770016729/9511789818</span>
+                <span>+91 95117 89818</span>
               </div>
 
               <div className="flex items-start gap-3">
                 <FaEnvelope className="mt-1" />
-                <span>Noxchemindustries@gmail.com</span>
+                <span>noxchemindustries@gmail.com</span>
               </div>
 
               <div className="flex items-start gap-3">
@@ -88,10 +88,10 @@ function Footer() {
 
               <div>
                 <h4 className="font-semibold text-white">
-                  Mayur Parmar & Ganesh sonawane 
+                  Ganesh Sonawane 
                 </h4>
 
-                <p>Co-Founder & Partner</p>
+                <p>Founder</p>
               </div>
 
 

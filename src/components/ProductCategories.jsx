@@ -49,7 +49,7 @@ export default function ProductCategories() {
           </h2>
 
           <p className="mx-auto mt-5 max-w-3xl text-lg text-gray-600">
-            We provide innovative chemical products designed to serve multiple
+            We provide innovative  DEF (Diesel Exhaust Fluid) products designed to serve multiple
             industrial sectors while maintaining the highest quality standards.
           </p>
 

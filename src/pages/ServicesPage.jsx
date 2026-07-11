@@ -1,6 +1,7 @@
 import ServicesHero from "../components/ServicesHero";
 import ServicesList from "../components/ServicesList";
 import AMCSection from "../components/AMCSection";
+import IndiaServiceMap from "../components/IndiaServiceMap";
 
 function ServicesPage() {
   return (
@@ -8,6 +9,7 @@ function ServicesPage() {
       <ServicesHero />
       <ServicesList />
       <AMCSection />
+      <IndiaServiceMap />
     </>
   );
 }

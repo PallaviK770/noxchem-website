@@ -8,13 +8,17 @@ import ProductsPage from "./pages/ProductsPage";
 import ApplicationsPage from "./pages/ApplicationsPage";
 import ScrollToHash from "./components/ScrollToHash";
 import ServicesPage from "./pages/ServicesPage";
-
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
 
     return (
+      
 
            < >
+
+          <ScrollToTop />
+
           <ScrollToHash />
 
 

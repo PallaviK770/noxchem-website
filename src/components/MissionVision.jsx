@@ -18,7 +18,7 @@ export default function MissionVision() {
 
           <p className="mx-auto mt-5 max-w-3xl text-lg text-gray-600">
             Our mission and vision define who we are, guide our decisions,
-            and inspire us to deliver excellence in every solution we provide.
+            and inspire us to deliver excellence in every DEF solution we provide.
           </p>
 
         </div>
@@ -46,7 +46,7 @@ duration-300">
             </h3>
 
             <p className="mt-6 leading-8 text-gray-600">
-              To deliver high-quality chemical solutions through innovation,
+              To deliver high-quality DEF (Diesel Exhaust Fluid) through innovation,
               advanced technology, and exceptional customer service while
               maintaining the highest standards of quality, safety,
               and sustainability.
@@ -77,7 +77,7 @@ duration-300">
             <p className="mt-6 leading-8 text-gray-600">
               To become a globally recognized leader in the chemical industry
               by continuously developing innovative, sustainable, and reliable
-              solutions that create lasting value for our customers and society.
+              DEF solutions that create lasting value for our customers and society.
             </p>
 
           </div>

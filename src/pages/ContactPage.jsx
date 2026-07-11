@@ -3,6 +3,7 @@ import ContactForm from "../components/ContactForm";
 import ContactMap from "../components/ContactMap";
 import ContactInfo from "../components/ContactInfo";
 
+
 export default function ContactPage() {
   return (
     <>
@@ -20,7 +21,7 @@ export default function ContactPage() {
 
       </section>
 
-      <ContactInfo />
+       <ContactInfo />
 
     </>
   );

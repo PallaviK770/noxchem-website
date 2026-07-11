@@ -14,7 +14,7 @@ function ServicesHero() {
         </h1>
 
         <p className="mt-8 text-lg text-gray-700 leading-8 max-w-3xl">
-          NOx Chem Industries provides more than premium Diesel Exhaust
+          NOxchem Industries provides more than premium Diesel Exhaust
           Fluid. We deliver technical support, Annual Maintenance
           Contracts (AMC), and dependable after-sales assistance to help
           customers maintain efficient SCR system performance and

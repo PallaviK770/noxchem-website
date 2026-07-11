@@ -1,3 +1,5 @@
+import emailjs from "@emailjs/browser";
+import { supabase } from "../lib/supabase";
 import { useState } from "react";
 
 export default function ApplicationModal({
@@ -35,10 +37,84 @@ export default function ApplicationModal({
     }));
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
   e.preventDefault();
 
-  setSubmitted(true);
+  try {
+    // Upload resume
+    const file = formData.resume;
+
+    const fileName = `${Date.now()}-${file.name}`;
+
+    const { error: uploadError } = await supabase.storage
+      .from("resumes")
+      .upload(fileName, file);
+
+    if (uploadError) throw uploadError;
+
+    // Get file path
+    const { data } = supabase.storage
+      .from("resumes")
+      .getPublicUrl(fileName);
+
+    // Save application
+    const { error } = await supabase
+      .from("career_applications")
+      .insert([
+        {
+          position: job,
+          full_name: formData.fullName,
+          email: formData.email,
+          phone: formData.mobile,
+          city: formData.city,
+          qualification: formData.qualification,
+          experience: formData.experience,
+          skills: formData.skills,
+          about: formData.about,
+          resume_url: data.publicUrl,
+        },
+      ]);
+
+    if (error) {
+  console.log("INSERT ERROR:", error);
+  alert(JSON.stringify(error, null, 2));
+  return;
+}
+await emailjs.send(
+  "service_u4sia7u",
+  "template_f3kykeo",
+  {
+    position: job,
+    full_name: formData.fullName,
+    email: formData.email,
+    phone: formData.mobile,
+    city: formData.city,
+    qualification: formData.qualification,
+    experience: formData.experience,
+    skills: formData.skills,
+    about: formData.about,
+    resume_url: data.publicUrl,
+  },
+  "r-WMPwGDXU-mSd9XG"
+);
+    setSubmitted(true);
+
+    setFormData({
+      fullName: "",
+      email: "",
+      mobile: "",
+      city: "",
+      qualification: "",
+      experience: "",
+      skills: "",
+      about: "",
+      resume: null,
+      agree: false,
+    });
+  } catch (err) {
+    console.error(err);
+    alert(err.message);
+  }
 }
 
   return (
@@ -180,12 +256,11 @@ export default function ApplicationModal({
                 <option value="">Select Qualification</option>
                 <option>Diploma</option>
                 <option>B.Sc</option>
-                <option>B.Tech</option>
-                <option>B.E</option>
-                <option>M.Sc</option>
-                <option>M.Tech</option>
+                <option>B.com</option>
+                <option>M.com</option>
                 <option>MBA</option>
-                <option>Ph.D</option>
+                <option>Graduate</option>
+                <option>12th pass</option>
                 <option>Other</option>
               </select>
             </div>

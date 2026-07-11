@@ -49,8 +49,8 @@ export default function OurCommitment() {
           </h2>
 
           <p className="mx-auto mt-5 max-w-3xl text-lg text-gray-600">
-            At NOx Chem Industries, we are dedicated to providing dependable
-            chemical solutions while building lasting relationships through
+            At NOxchem Industries, we are dedicated to providing dependable
+            DEF (Diesel Exhaust Fluid) while building lasting relationships through
             quality, innovation, and customer-focused service.
           </p>
 

@@ -22,7 +22,7 @@ export default function HomeCTA() {
             </p>
 
             <h2 className="mt-5 text-4xl font-bold leading-tight text-white md:text-5xl">
-              Ready to Partner with NOx Chem Industries?
+              Ready to Partner with NOxchem Industries?
             </h2>
 
             <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-blue-100">

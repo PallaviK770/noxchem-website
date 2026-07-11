@@ -9,12 +9,12 @@ export default function AboutHero() {
         </p>
 
         <h1 className="mt-4 text-5xl font-bold">
-          Building Trust Through Quality Chemical Solutions
+          Building Trust Through Quality  DEF Solutions
         </h1>
 
         <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-blue-100">
-          NOx Chem Industries is committed to delivering high-quality chemical
-          solutions that empower industries with innovation, reliability, and
+          NOxchem Industries is committed to delivering high-quality  DEF (Diesel Exhaust Fluid)
+          that empower industries with innovation, reliability, and
           sustainability.
         </p>
 

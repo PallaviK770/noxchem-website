@@ -9,11 +9,11 @@ export default function ProductsHero() {
         </p>
 
         <h1 className="mt-4 text-5xl font-bold">
-          High Performance Chemical Solutions
+          High Performance DEF Solutions
         </h1>
 
         <p className="mx-auto mt-6 max-w-3xl text-lg leading-8 text-blue-100">
-          Discover our comprehensive range of premium chemical products,
+          Discover our comprehensive range of premium  DEF (Diesel Exhaust Fluid)products,
           engineered to deliver consistent quality, reliability, and superior
           performance across diverse industries.
         </p>
