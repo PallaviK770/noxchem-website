@@ -4,6 +4,7 @@ import {
   FaPhoneAlt,
   FaEnvelope,
 } from "react-icons/fa";
+import { FaFileInvoice } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -52,31 +53,29 @@ function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="text-xl font-semibold mb-5">
-              Contact
-            </h3>
+  <h3 className="text-xl font-semibold mb-5">
+    Contact
+  </h3>
 
-            <div className="space-y-4 text-blue-100">
+  <div className="space-y-4 text-blue-100">
 
-              <div className="flex items-start gap-3">
-                <FaPhoneAlt className="mt-1" />
-                <span>+91 95117 89818</span>
-              </div>
+    <div className="flex items-center gap-3">
+      <FaPhoneAlt className="text-white" />
+      <span>+91 95117 89818</span>
+    </div>
 
-              <div className="flex items-start gap-3">
-                <FaEnvelope className="mt-1" />
-                <span>noxchemindustries@gmail.com</span>
-              </div>
+    <div className="flex items-center gap-3">
+      <FaEnvelope className="text-white" />
+      <span>noxchemindustries@gmail.com</span>
+    </div>
 
-              <div className="flex items-start gap-3">
-                <FaMapMarkerAlt className="mt-1" />
-                <span>
-                  Indore, Madhyapradesh, India
-                </span>
-              </div>
+    <div className="flex items-center gap-3">
+      <FaMapMarkerAlt className="text-white" />
+      <span>Indore, Madhya Pradesh, India</span>
+    </div>
 
-            </div>
-          </div>
+  </div>
+</div>
 
           {/* Leadership */}
           <div>
@@ -94,7 +93,12 @@ function Footer() {
                 <p>Founder</p>
               </div>
 
-
+ <div>
+      <h4 className="font-semibold text-white">
+        GSTIN
+      </h4>
+      <p>23ABAFN2572K1ZB</p>
+    </div>
             </div>
 
           </div>
