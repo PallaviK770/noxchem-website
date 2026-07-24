@@ -40,9 +40,23 @@ export default function IndiaServiceMap() {
               </div>
 
               <p className="text-gray-600 ml-7">
-                Gujarat, Delhi, Kolkata (West Bengal)
+                 Gujarat, Delhi (NCR), West Bengal (Kolkata) & Odisha
               </p>
             </div>
+
+          <div className="mb-8">
+  <div className="flex items-center gap-3 mb-4">
+    <div className="w-4 h-4 rounded-full bg-[#2F8F1E]"></div>
+
+    <span className="font-semibold">
+      Head Office
+    </span>
+  </div>
+
+  <p className="text-gray-600 ml-7">
+    Indore, Madhya Pradesh
+  </p>
+</div>
 
             <div>
               <div className="flex items-center gap-3 mb-4">
@@ -60,7 +74,7 @@ export default function IndiaServiceMap() {
             <div className="grid grid-cols-3 gap-6 mt-10">
 
   <div className="text-center">
-    <h3 className="text-4xl font-bold text-[#0A4DA3]">3</h3>
+    <h3 className="text-4xl font-bold text-[#0A4DA3]">5</h3>
     <p className="text-gray-600 mt-2">Active States</p>
   </div>
 
